@@ -1,0 +1,75 @@
+:root {
+  /* color */
+  --clr-dark: #040601;
+  --clr-light: #f7fee7;
+  --clr-slate400: #94a3b8;
+  --clr-slate600: #475569;
+  --clr-slate800: #1e293b;
+  --clr-lime300: #bef264;
+  --clr-lime400: #a3e635;
+  --clr-lime600: #65a30d;
+  --clr-lime800: #3f6212;
+  --clr-lime950: #1a2e05;
+  --clr-amber300: #fcd34d;
+  --clr-amber400: #fbbf24;
+  --clr-amber600: #d97706;
+  --clr-amber800: #92400e;
+  --clr-amber950: #451a03;
+  --clr-pink300: #f9a8d4;
+  --clr-pink500: #ec4899;
+  --clr-pink600: #db2777;
+  --clr-pink800: #9d174d;
+  --clr-pink950: #500724;
+
+  /* sizes */
+  --size-xxs: 0.5rem;
+  --size-xs: 0.75rem;
+  --size-sm: 0.875rem;
+  --size-base: 1rem;
+  --size-lg: 1.125rem;
+  --size-xl: 1.25rem;
+  --size-2xl: 1.5rem;
+  --size-3xl: 1.875rem;
+  --size-4xl: 2.25rem;
+  --size-5xl: 3rem;
+  --size-6xl: 3.75rem;
+  --size-7xl: 4.5rem;
+  --size-8xl: 6rem;
+  --size-9xl: 8rem;
+  --size-10xl: 10rem;
+}
+
+* {
+  margin: 0;
+  line-height: calc(1em + 0.5rem);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  user-select: none;
+}
+
+button {
+  display: inline-block;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: inherit;
+}
