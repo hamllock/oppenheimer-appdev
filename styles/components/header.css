@@ -5,6 +5,7 @@
 }
 
 .header__logo {
+  font-size: var(--size-2xl);
   display: flex;
   align-items: center;
   font-weight: 300;
@@ -26,16 +27,15 @@
   list-style: none;
   padding: 0;
   gap: 2em;
-  transition: all 0.3s ease-in-out;
 }
 
-.header__link {
+.header__item {
+  transition: opacity 400ms ease;
   text-decoration: none;
   color: var(--clr-lime300);
   font-weight: 500;
   font-size: var(--size-base);
   padding: 0.5rem;
-  transition: all 0.3s ease-in-out;
 }
 
 .header__list:hover > .header__item {
@@ -45,12 +45,6 @@
 .header__list:hover > .header__item:hover {
   opacity: 1;
 }
-
-/* .header__link:hover {
-  color: var(--clr-lime300);
-  text-shadow: 0 14px 28px rgba(190, 242, 100, 0.22),
-    0 10px 10px rgba(190, 242, 100, 0.25), 0 0 120px -10px rgb(190, 242, 100);
-} */
 
 .header__sun {
   display: block;
