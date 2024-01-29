@@ -2,9 +2,16 @@
   /* color */
   --clr-dark: #040601;
   --clr-light: #f7fee7;
+  --clr-slate100: #f1f5f9;
+  --clr-slate200: #e2e8f0;
   --clr-slate400: #94a3b8;
   --clr-slate600: #475569;
   --clr-slate800: #1e293b;
+  --clr-gray50: #f9fafb;
+  --clr-gray200: #e5e7eb;
+  --clr-gray400: #9ca3af;
+  --clr-gray600: #4b5563;
+  --clr-gray800: #1f2937;
   --clr-lime300: #bef264;
   --clr-lime400: #a3e635;
   --clr-lime600: #65a30d;
@@ -20,6 +27,13 @@
   --clr-pink600: #db2777;
   --clr-pink800: #9d174d;
   --clr-pink950: #500724;
+  --clr-red200: #fecaca;
+  --clr-red300: #fca5a5;
+  --clr-red400: #f87171;
+  --clr-red500: #ef4444;
+  --clr-red600: #dc2626;
+  --clr-red700: #b91c1c;
+  --clr-red800: #991b1b;
 
   /* sizes */
   --size-xxs: 0.5rem;
