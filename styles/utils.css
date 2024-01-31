@@ -16,24 +16,90 @@
 /* 2xl */
 /* @media (min-width: 1536px) {} */
 
-.btn {
-  display: inline-block;
+.right-btn__container {
+  display: flex;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+}
+
+.left-btn__container {
+  display: flex;
+  height: 100vh;
+  position: absolute;
+  left: 0;
+}
+
+.right__btn {
+  z-index: 99;
+  height: 100%;
   font-weight: 500;
   text-decoration: none;
   letter-spacing: -0.05em;
-  border: 1px solid var(--clr-red600);
   color: var(--clr-white);
-  padding: 0.5em 1em;
-  border-radius: 6px;
+  padding-left: 250px;
+  padding-right: 50px;
   transition: all 0.4s ease-in-out;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
-  background-color: var(--clr-red600);
-  color: var(--clr-dark);
-  box-shadow: 0 14px 28px rgba(185, 28, 28, 0.22),
-    0 10px 10px rgba(185, 28, 28, 0.25), 0 0 120px -10px rgb(220, 38, 38);
+.left__btn {
+  z-index: 99;
+  height: 100%;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: -0.05em;
+  color: var(--clr-white);
+  padding-left: 50px;
+  padding-right: 250px;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn__shadow {
+  position: relative;
+  height: 100%;
+}
+
+.right__shadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3000px;
+  height: 100%;
+  box-shadow: -200px 0 200px rgba(185, 28, 28, 0.22),
+    -100px 0 100px rgba(185, 28, 28, 0.25),
+    -100px 0 100px -100px rgb(220, 38, 38);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.left__shadow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3000px;
+  height: 100%;
+  box-shadow: 200px 0 200px rgba(185, 28, 28, 0.22),
+    100px 0 100px rgba(185, 28, 28, 0.25), 100px 0 100px -100px rgb(220, 38, 38);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  pointer-events: none;
+}
+
+.right-btn__container:hover .right__shadow::after,
+.left-btn__container:hover .left__shadow::after {
+  opacity: 1;
+}
+
+.right-btn__container:hover .right__btn {
+  font-size: var(--size-xl);
+  transform: translateX(15px);
+}
+
+.left-btn__container:hover .left__btn {
+  font-size: var(--size-xl);
+  transform: translateX(-15px);
 }
 
 .container {
@@ -55,6 +121,7 @@
   align-items: center;
   scroll-snap-align: start;
   scroll-snap-stop: normal;
+  flex: none;
 }
 
 .margin {
@@ -64,6 +131,10 @@
   margin: 0 10vw;
   display: flex;
   align-items: center;
+}
+
+#third__section {
+  justify-content: flex-end;
 }
 
 .hidden {

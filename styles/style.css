@@ -60,7 +60,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
+  scroll-snap-type: x mandatory;
 }
 
 body {
@@ -68,6 +68,11 @@ body {
   font-weight: 400;
   background-color: var(--clr-dark);
   color: var(--clr-light);
+  overflow: hidden;
+}
+
+main {
+  display: flex;
 }
 
 img,

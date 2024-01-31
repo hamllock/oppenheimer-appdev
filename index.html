@@ -7,6 +7,7 @@
     <title>Oppenheimer</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Serif+Text&display=swap");
     </style>
   </head>
@@ -47,29 +48,43 @@
       </nav>
     </header> -->
     <main>
-      <section class="outer">
+      <section class="outer" id="start">
         <video playsinline autoplay muted loop class="hero__video">
           <source src="/oppie.mp4" type="video/mp4" />
         </video>
         <section class="margin">
           <div class="hero container">
-            <h1 class="hero__title">OPPENHEIMER</h1>
+            <h1 class="hero__title anim-typewriter line-1">OPPENHEIMER</h1>
             <h2 class="hero__subtitle">
               "Now I am become death, the destroyer of worlds."
             </h2>
-            <a href="#first">
-              <button class="hero__button btn">Learn More</button>
-            </a>
           </div>
         </section>
+        <div class="right-btn__container">
+          <a href="#first">
+            <button class="right__btn">❯</button>
+          </a>
+          <div class="btn__shadow right__shadow"></div>
+        </div>
       </section>
 
       <section class="outer" id="first">
-        <img class="first__image" src="/oppiefirst.png" alt="Oppie" />
-        <section class="margin">
-          <div class="first">
-            <h1 class="first__title">THE BRILLIANT MIND</h1>
-            <p class="first__text">
+        <div class="left-btn__container">
+          <div class="btn__shadow left__shadow"></div>
+          <a href="#start">
+            <button class="left__btn">❮</button>
+          </a>
+        </div>
+        <img
+          class="content__image"
+          src="/oppiefirst.png"
+          alt="Oppie"
+          id="first__img"
+        />
+        <section class="margin" id="first__section">
+          <div class="content" id="first__div">
+            <h1 class="content__title">THE BRILLIANT MIND</h1>
+            <p class="content__text">
               J. Robert Oppenheimer, born on April 22, 1904, in New York City,
               emerged as a prodigious intellect from an early age. Gifted with
               an insatiable curiosity and an exceptional grasp of theoretical
@@ -79,7 +94,7 @@
               earning him recognition as a scholar of extraordinary intellect
               within the academic community.
             </p>
-            <p class="first__text">
+            <p class="content__text">
               His academic journey, from studying at the University of Cambridge
               to earning a Ph.D. from the University of Göttingen, showcased a
               mind that was not only adept at comprehending complex scientific
@@ -88,20 +103,33 @@
               through the ranks of academia, solidifying his reputation as a
               leading figure in theoretical physics.
             </p>
-
-            <a href="#second">
-              <button class="first__button btn">Go Down</button>
-            </a>
           </div>
         </section>
+        <div class="right-btn__container">
+          <a href="#second">
+            <button class="right__btn">❯</button>
+          </a>
+          <div class="btn__shadow right__shadow"></div>
+        </div>
       </section>
 
       <section class="outer" id="second">
-        <img class="second__image" src="/manhattan.jpg" alt="le bomb" />
-        <section class="margin">
-          <div class="second">
-            <h1 class="second__title">THE MANHATTAN PROJECT ARCHITECT</h1>
-            <p class="second__text">
+        <div class="left-btn__container">
+          <div class="btn__shadow left__shadow"></div>
+          <a href="#first">
+            <button class="left__btn">❮</button>
+          </a>
+        </div>
+        <img
+          class="content__image"
+          src="/manhattan.jpg"
+          alt="le bomb"
+          id="second__img"
+        />
+        <section class="margin" id="second__section">
+          <div class="content">
+            <h1 class="content__title">THE MANHATTAN PROJECT ARCHITECT</h1>
+            <p class="content__text">
               The pinnacle of Oppenheimer's career came during World War II when
               he assumed a pivotal role as the scientific director of the
               Manhattan Project. This ambitious and clandestine initiative aimed
@@ -111,7 +139,7 @@
               creation of the devastating yet transformative weapon that played
               a decisive role in ending the war.
             </p>
-            <p class="second__text">
+            <p class="content__text">
               The challenges faced during the Manhattan Project were not merely
               scientific; they were ethical, moral, and existential.
               Oppenheimer, in overseeing the development of this unprecedented
@@ -120,10 +148,91 @@
               reflecting a man who understood the dual nature of scientific
               achievement.
             </p>
+          </div>
+        </section>
+        <div class="right-btn__container">
+          <a href="#third">
+            <button class="right__btn">❯</button>
+          </a>
+          <div class="btn__shadow right__shadow"></div>
+        </div>
+      </section>
 
-            <a href="#third">
-              <button class="second__button btn">Go Down</button>
-            </a>
+      <section class="outer" id="third">
+        <div class="left-btn__container">
+          <div class="btn__shadow left__shadow"></div>
+          <a href="#second">
+            <button class="left__btn">❮</button>
+          </a>
+        </div>
+        <img
+          class="content__image"
+          src="/stress.png"
+          alt="oppie stressed"
+          id="third__img"
+        />
+        <section class="margin" id="third__section">
+          <div class="content" id="third__div">
+            <h1 class="content__title">DUALITY OF ACHIEVEMENT</h1>
+            <p class="content__text">
+              While Oppenheimer's role in the Manhattan Project secured his
+              place in history, it was also a period marked by profound moral
+              and ethical reflections. The duality of achievement and the
+              consequences of the atomic bomb haunted Oppenheimer, leading to
+              his later advocacy for arms control and the establishment of
+              international scientific cooperation to prevent the proliferation
+              of nuclear weapons.
+            </p>
+            <p class="content__text">
+              His famous quote, "Now I am become Death, the destroyer of
+              worlds," uttered upon witnessing the first successful test of the
+              atomic bomb, encapsulates the internal struggle he faced. This
+              moment marked not just a scientific achievement but a profound
+              realization of the awesome and terrible power that science had
+              unleashed.
+            </p>
+          </div>
+        </section>
+        <div class="right-btn__container">
+          <a href="#fourth">
+            <button class="right__btn">❯</button>
+          </a>
+          <div class="btn__shadow right__shadow"></div>
+        </div>
+      </section>
+
+      <section class="outer" id="fourth">
+        <div class="left-btn__container">
+          <div class="btn__shadow left__shadow"></div>
+          <a href="#third">
+            <button class="left__btn">❮</button>
+          </a>
+        </div>
+        <img
+          class="content__image"
+          src="/legacy.jpg"
+          alt="le bomb"
+          id="fourth__img"
+        />
+        <section class="margin" id="fourth__section">
+          <div class="content">
+            <h1 class="content__title">LEGACY AND BEYOND</h1>
+            <p class="content__text">
+              Beyond the scientific and historical impact, J. Robert
+              Oppenheimer's legacy extends into the realms of academia,
+              philosophy, and public service. His post-war contributions to
+              education and his dedication to advancing scientific knowledge
+              showcased a multifaceted individual whose influence permeated
+              various facets of society.
+            </p>
+            <p class="content__text">
+              Oppenheimer's post-Manhattan Project era saw him contribute
+              significantly to academic institutions, playing a pivotal role in
+              the establishment of the Institute for Advanced Study in
+              Princeton. His commitment to intellectual pursuits and the
+              nurturing of future scientific minds demonstrated a profound
+              belief in the power of education to shape a better world.
+            </p>
           </div>
         </section>
       </section>
