@@ -18,51 +18,14 @@
   transform: scale(1.1);
 }
 
-.anim-typewriter {
-  animation: typewriter 1s steps(11) 1s 1 normal both,
-    blinkTextCursor 500ms steps(44) infinite normal;
-}
-
-@keyframes typewriter {
-  from {
-    width: 0;
-  }
-  to {
-    width: 94%;
-  }
-}
-
-@keyframes blinkTextCursor {
-  from {
-    border-right-color: rgba(255, 255, 255, 0.75);
-  }
-  to {
-    border-right-color: transparent;
-  }
-}
-
-.line-1 {
-  position: relative;
-  top: 50%;
-  width: 1em;
-  margin: 0 auto;
-  border-right: 2px solid rgba(255, 255, 255, 0.75);
-  font-size: var(--size-xl);
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-}
-
 .hero__title {
-  font-family: "Rubik Mono One", monospace;
   font-size: var(--size-10xl);
-  font-weight: 400;
+  font-weight: 900;
   color: var(--clr-light);
   line-height: 0.75;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  letter-spacing: -10px;
 }
 
 .hero__subtitle {
