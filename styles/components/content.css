@@ -42,3 +42,46 @@
 #fourth__img {
   opacity: 0.5;
 }
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+@media (min-width: 1280px) {
+  .content__title {
+    font-size: var(--size-7xl);
+    font-weight: 900;
+    color: var(--clr-light);
+    line-height: 0.75;
+  }
+
+  .content__text {
+    font-size: var(--size-sm);
+    text-indent: var(--size-base);
+    font-weight: 300;
+  }
+}
+
+/* 2xl */
+@media (min-width: 1536px) {
+  .content__title {
+    font-size: var(--size-9xl);
+    font-weight: 900;
+    color: var(--clr-light);
+    line-height: 0.75;
+  }
+
+  .content__text {
+    font-size: var(--size-lg);
+    text-indent: var(--size-base);
+  }
+}
