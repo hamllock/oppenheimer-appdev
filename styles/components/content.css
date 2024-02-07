@@ -53,12 +53,25 @@
 /* @media (min-width: 768px) {} */
 
 /* lg */
-/* @media (min-width: 1024px) {} */
+@media (min-width: 1024px) {
+  .content__title {
+    font-size: var(--size-7xl);
+    font-weight: 900;
+    color: var(--clr-light);
+    line-height: 0.75;
+  }
+
+  .content__text {
+    font-size: var(--size-sm);
+    text-indent: var(--size-base);
+    font-weight: 300;
+  }
+}
 
 /* xl */
 @media (min-width: 1280px) {
   .content__title {
-    font-size: var(--size-7xl);
+    font-size: var(--size-8xl);
     font-weight: 900;
     color: var(--clr-light);
     line-height: 0.75;
